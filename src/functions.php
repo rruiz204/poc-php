@@ -11,3 +11,11 @@ $doble = fn($number) => $number * 2;
 
 echo $doble(5) . "\n";
 
+
+$discount = 50;
+
+$anonymous = function(int|float $amount) use ($discount): int|float {
+  return $amount - $discount;
+};
+
+echo $anonymous(120) . "\n";
